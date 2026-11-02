@@ -2,10 +2,13 @@
 
 Merge two (or more) Mortal Kombat 11 **MKSwap** mods that replace the **same package file**.
 
-With ASIMK11's MKSwap, every mod is a full copy of a game package (for example
-`GEARASSETS_SCO_ScriptAssets.xxx` + `.psf`). Two skin mods for the same character
-therefore have the same file names, and only one of them can sit in `MKSwap\Asset`.
-This tool combines them into a single package that contains the changes from all of them.
+With ASIMK11's MKSwap, one mod is a pair of files: a `.xxx` and a `.psf`
+(for example `GEARASSETS_SCO_ScriptAssets.xxx` + `GEARASSETS_SCO_ScriptAssets.psf`).
+A second skin mod for the same character comes with its own `.xxx` and `.psf` that have
+**exactly the same two file names**, so copying it into `MKSwap\Asset` asks you to
+overwrite the first mod and only one of them can be used.
+
+This tool merges the two pairs into a single `.xxx` + `.psf` pair that contains both skins.
 
 ## Requirements
 
